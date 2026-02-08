@@ -15,3 +15,12 @@ Secure handling of medical data (encryption, access control)
 Scalable cloud-based architecture
 User-friendly interface for non-technical users
 High availability and reliability
+
+Technologies Requirements
+Frontend: React.js, Camera APIs
+Backend: Python (FastAPI / Flask) , REST APIs
+Image Processing: OpenCV, NumPy, PIL
+AI / Machine Learning: TensorFlow / PyTorch, CNN Models (ResNet / EfficientNet)
+Decision & Analytics: Risk Scoring Engine,Scikit-learn, Pandas
+Data & Security: Cloud Platform (AWS),Encrypted Storage, MongoDB, Role-Based Access Control
+
