@@ -1,33 +1,32 @@
-Layer 1: User / Data Source
-Patient or health worker
-Mobile App / Web Portal for image upload
+# Cancer Detection System - Design Document
 
-Layer 2: Data Processing Layer
-Image Pre-Processing Service
-Noise removal
-Image normalization
-Region of Interest extraction
+## 1. System Overview
 
-Layer 3: AI / ML Layer
-AI Inference Engine
-CNN / Deep Learning models
-Lesion detection & feature extraction
+### 1.1 Purpose
+This document describes the technical design and architecture of the Cancer Detection System, a multi-layered AI-powered platform for analyzing medical images and assisting healthcare professionals in cancer diagnosis.
 
-Layer 4: Decision & Scoring Layer
-Risk Assessment Module
-Cancer probability calculation
-Risk classification (Low / Medium / High)
-Confidence score generation
+### 1.2 Architecture Pattern
+The system follows a 6-layer architecture pattern that separates concerns and enables scalability, maintainability, and security.
 
-Layer 5: Application & Review Layer
-Doctor Dashboard
-AI result visualization
-Heatmaps and highlights
-Clinical notes and validation
+### 1.3 Design Principles
+- **Modularity**: Each layer operates independently with well-defined interfaces
+- **Scalability**: Horizontal scaling at each layer
+- **Security**: End-to-end encryption and role-based access control
+- **Reliability**: Fault tolerance and redundancy
+- **Performance**: Optimized for real-time inference
+- **Compliance**: HIPAA and medical device regulations
 
-Layer 6: Data & Security Layer
-Secure Cloud Storage
-Encrypted patient data
-Image & report database
-Role-based access control
-Audit logs and backups
+## 2. System Architecture
+
+### 2.1 High-Level Architecture Diagram
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                    Layer 1: User / Data Source              │
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐     │
+│  │   Patient    │  │ Health Worker│  │  Mobile App  │     │
+│  └──────────────┘  └──────────────┘  └──────────────┘     │
+│           │                │                  │             │
+│           └────────────────┴──────────────────┘             │
+│                          │                                  │
+└──────────────────────────┼──────────────────────────────────┘
